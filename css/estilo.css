@@ -3,6 +3,14 @@ header {  /* cabeçalho */
     color: white; /* define a cor */
     padding:500px; /* espaço em torno de um elemento em todos os lados */
     text-align: center; /* alinhamento na horizontal */
+    background-image: url(img/estecomputador/áreadetrabalho/web/img);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    display: table-footer-group; /* alinhamento da foto no cabeçalho */
+    flex-direction: column;
+    justify-content: center;
 }
 
 body {   /* conteudo visivel de uma pagina  */
@@ -33,17 +41,23 @@ nav a :hover {
     background-color: #555;
 }
 
-main { /* conteudo principal */
-   /* display: flex; */
-   /* flex-direction: row; /* direção em que os elementos serão exibidos */
-   /* justify-content: space-between; /* justificar um texto */
-    margin: auto;
-  /*  width: 80%; */
-    background-color: #e74c3c;
+main {  /* conteudo principal */
+   display: flex;
+   /*flex-direction: row; /* direção em que os elementos serão exibidos */
+ /*  justify-content: space-between; /* justificar um texto */
+   margin: auto;
+   width: 80%; 
+ /* background-color: #e74c3c; */
 }
 
 .imagem-esquerda{
     float: left;
+    margin-right: 60px;
+}
+
+.imgem-direita{
+    float: right;
+    margin-left: 60px;
 }
 
 #secao {
@@ -64,28 +78,28 @@ footer {
 
 
 .voltar{
+    clear: both;
     background-color: #555;
     color: white;
     text-decoration: none;
     margin-top: 20px; /* tamanho da margem superior */
-    clear: both;
     
 }
 
-.texto-laranja {
+/*.texto-laranja {
     color: #e74c3c; 
     font-weight: bold; 
-}
+} */
 
-.texto-azul {
+/* .texto-azul {
      color: #3498db; 
-}
+} */
 
-.texto-verde {
-    display: inline-block; /* exebição visual da pagina */
+/*.texto-verde {
+    display: inline-block; /* exebição visual da pagina
     padding: 10px;  
     margin-top: 10px; 
     background-color: #2ecc71;
     color: white;
     border-radius: 5px;
-} 
+} */
