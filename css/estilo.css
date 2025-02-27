@@ -60,6 +60,10 @@ main {  /* conteudo principal */
     margin-left: 60px;
 }
 
+.clear {
+    clear: both;
+}
+
 #secao {
     background-color: white;
     padding: 20px;  
