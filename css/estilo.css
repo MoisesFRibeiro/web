@@ -1,12 +1,12 @@
 header {  /* cabeçalho */
     background-color: #333; /* cor de fundo */
     color: white; /* define a cor */
-    padding:500px; /* espaço em torno de um elemento em todos os lados */
+    padding:40px; /* espaço em torno de um elemento em todos os lados */
     text-align: center; /* alinhamento na horizontal */
     background-image: url(img/estecomputador/áreadetrabalho/web/img);
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 250px;
     text-align: center;
     display: table-footer-group; /* alinhamento da foto no cabeçalho */
     flex-direction: column;
@@ -24,9 +24,10 @@ body {   /* conteudo visivel de uma pagina  */
 nav {  /* links de navegação */
     background-color: #444;
     color: white;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
+
 }
 
 nav a { 
@@ -34,7 +35,7 @@ nav a {
     text-decoration: none; /* define um riscado ou sublinhado */
     padding: 10px 20px; 
     margin: 0 20px; /* tamanho de todas as margens */
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 nav a :hover {
@@ -43,21 +44,20 @@ nav a :hover {
 
 main {  /* conteudo principal */
    display: flex;
-   /*flex-direction: row; /* direção em que os elementos serão exibidos */
- /*  justify-content: space-between; /* justificar um texto */
-   margin: auto;
-   width: 80%; 
- /* background-color: #e74c3c; */
+   flex-direction: column; /* direção em que os elementos serão exibidos */
+   justify-content: space-between; /* justificar um texto */
+   margin: 1.5;
+   width: auto;  
 }
 
 .imagem-esquerda{
     float: left;
-    margin-right: 60px;
+    margin-right: 150px;
 }
 
 .imgem-direita{
     float: right;
-    margin-left: 60px;
+    margin-left: 100px;
 }
 
 .clear {
@@ -68,7 +68,7 @@ main {  /* conteudo principal */
     background-color: white;
     padding: 20px;  
     border-radius: 8px; /* arredondamento das bordas */
-    width: 70%; 
+    width: 60%; 
     margin: auto;
 }
 
@@ -77,7 +77,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;   
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 
@@ -87,23 +87,29 @@ footer {
     color: white;
     text-decoration: none;
     margin-top: 20px; /* tamanho da margem superior */
-    
 }
 
-/*.texto-laranja {
+.texto-laranja {
     color: #e74c3c; 
     font-weight: bold; 
-} */
+} 
 
-/* .texto-azul {
+.texto-azul {
      color: #3498db; 
-} */
+} 
 
-/*.texto-verde {
-    display: inline-block; /* exebição visual da pagina
+.texto-verde {
+    display: inline-block; /* exebição visual da pagina */
     padding: 10px;  
     margin-top: 10px; 
     background-color: #2ecc71;
     color: white;
-    border-radius: 5px;
-} */
+    border-radius: 5px; 
+}
+* alinha texto a esquerda{
+    text-align: left
+}
+
+.display-flex {
+    border-right: 15px;
+}
